@@ -15,7 +15,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TollRoadInterface\TollRoadInterface.csproj" />
-    <ProjectReference Include="..\TollRoad\TollRoad.csproj" />
   </ItemGroup>
 
 </Project>

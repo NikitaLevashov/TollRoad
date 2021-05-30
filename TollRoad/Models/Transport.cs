@@ -59,7 +59,7 @@ namespace TollRoad.Models
         /// <param name="timeOfToll">Data.</param>
         /// <param name="inbound">Direction.</param>
         /// <returns></returns>
-        public decimal PeakTime(DateTime timeOfToll, bool inbound) =>
+        private decimal PeakTime(DateTime timeOfToll, bool inbound) =>
             (IsWeekDay(timeOfToll), GetTimeBand(timeOfToll), inbound) switch
             {
                 (true, TimeBand.Overnight, _) => 0.75m,
